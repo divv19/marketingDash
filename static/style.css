@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.chart-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.tooltip {
+    position: absolute;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0;
+    font-size: 0.9em;
+}
+
+.axis-label {
+    font-size: 0.9em;
+    fill: #555;
+}
+
+.axis-ticks text {
+    font-size: 0.8em;
+    fill: #777;
+}
+
+.bar {
+    fill: #4c78a8; /* Example bar color */
+}
+
+.line {
+    fill: none;
+    stroke-width: 2; /* Line chart line style will be set by D3.js, but can add default here */
+}
+
+.bubble {
+    fill: #66c2a5; /* Example bubble color */
+    opacity: 0.7;
+}
